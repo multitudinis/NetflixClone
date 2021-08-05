@@ -1,0 +1,143 @@
+:root{
+    --vermelho: #3eac28;
+    --preto: #141414;
+  }
+  
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  
+  }
+
+  /*Elementos base*/
+
+  body{
+    background-color: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+  }
+  
+  header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  header .logo {
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+    margin-left: 15px;
+  }
+  
+  header nav a{
+    text-decoration: none; 
+    color: #AAA;
+    margin-right: 10px;
+  }
+  
+  
+  header nav a:hover{
+    color: #fff
+  }
+  
+  /*Filme principal*/
+  
+  .filme-principal{
+    font-size: 16px;
+  
+    background-image: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(../img/htemple.jpg);
+  
+    height: 400px;
+    background-size:cover;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .filme-principal .titulo {
+    margin-top: 15%;
+    font-family: 'Trebuchet MS';
+    font-size: 50px;
+    margin-bottom: 5px;
+  }
+  
+  .descricao{
+    color: white;
+  }
+  
+  .botao{
+    background: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+  
+    padding: 15px 30px;
+    margin-right: 35px;
+    
+    font-size: 12px;
+  
+    cursor: pointer;
+    transition: 3s ease all;
+  }
+  
+  .botao:hover{
+    background-color: white;
+    color: black;
+  }
+  .botao i{
+    margin-right: 7px;
+  }
+  .botoes{
+    margin-left: 35px;
+  }
+  .container {
+    margin-left: 35px;
+    margin-right: 20px;
+  }
+
+  /* Carrossel */
+
+  .filme-principal .container {
+      width: 70%;
+  }
+  
+  .box-video {
+      height: 100%;
+      width: 100%;
+      display: block;
+  }
+  
+  .carrossel {
+      margin-top: 5px;
+  }
+  
+  .categoria {
+      margin-top: 15px;
+      color: white;
+  }
+  
+  .carrossel .item {
+      cursor: pointer;
+      transition: .2s ease all;
+  }
+  
+  .item:hover{
+      opacity: 0.9;
+      transform: scale(1.1);
+  }
+  
+/*
+referencial de fontes: 
+https://www.themoviedb.org/
+https://fontawesome.com
+https://owlcarousel2.github.io/OwlCarousel2/demos/basic.html
+*/
